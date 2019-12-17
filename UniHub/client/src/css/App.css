@@ -1,0 +1,189 @@
+@font-face {
+    font-family: main;
+    src: url(../font/GoogleSans-Regular.ttf);
+}
+
+body {
+    font-family: main, sans-serif;
+}
+
+.activeNav {
+    color: #fff;
+}
+
+.select {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.7rem;
+    height: 2.6rem;
+    resize: none;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.select:hover {
+    background-color: rgba(232, 234, 237, 1);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.select:focus {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.select:focus:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.select:disabled {
+    background-color: rgba(241, 243, 244, 0);
+}
+
+.adTextBox {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.7rem;
+    resize: none;
+    padding: 1.3rem;
+    height: 1rem;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox {
+    font-size: 1rem;
+    border-width: 0;
+    background-color: rgba(241, 243, 244, 1);
+    border-radius: 0.7rem;
+    resize: none;
+    padding: 1.3rem;
+    height: 1rem;
+    outline: none;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox:hover {
+    background-color: rgba(232, 234, 237, 1);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textBox:focus {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.textBox:focus:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.textBox:disabled {
+    background-color: rgba(241, 243, 244, 0);
+}
+
+.button {
+    background-color: transparent;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    color: rgba(0, 128, 0, 1);
+    border: solid grey 0;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:focus {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: rgba(0, 128, 0, 1);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0.9259259259259258rem 1.0416666666666667rem 0 rgba(0, 0, 0, 0.3);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header {
+    background-image: url(../image/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+}
+
+.navBar {
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.loginCard {
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.modalAlert {
+    animation: anvil 0.5s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.modalPrompt {
+    animation: pop 0.5s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+@keyframes anvil {
+    0% {
+        transform: scale(5) rotate(0);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    50% {
+        transform: scale(1) rotate(-0.2deg);
+        opacity: 1;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+    }
+    75% {
+        transform: scale(1) rotate(0.2deg);
+        opacity: 1;
+        box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0) rotate(360deg);
+    }
+    60% {
+        transform: scale(0.8) rotate(-10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/*.profileTable {
+    background-color: rgba(241, 243, 244, 1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.profileTable > tbody > tr > th {
+    color: darkslategray;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.profileTable > tbody > tr > td {
+    text-align: center;
+    padding: 1rem 1rem 1rem 0;
+}*/
+

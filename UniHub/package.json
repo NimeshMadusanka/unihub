@@ -1,0 +1,31 @@
+{
+  "name": "unihub",
+  "version": "1.0.0",
+  "description": "Student and Instructor Information System",
+  "main": "server.js",
+  "scripts": {
+    "prepare": "npm run gcp-build",
+    "pretest": "npm run gcp-build",
+    "start": "node server",
+    "server": "nodemon server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "gcp-build": "npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Uvindu Sanjana",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.5",
+    "generate-password": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.4",
+    "nodemailer": "^6.2.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "prettier": "^1.17.0"
+  }
+}
