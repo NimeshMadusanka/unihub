@@ -5,6 +5,7 @@ const MailService = require("../service/service.mail");
 
 class AdminController {
 
+    //test
     /**
      * @desc Create a new admin.
      * @param data
