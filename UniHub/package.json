@@ -16,7 +16,7 @@
   "dependencies": {
     "@google-cloud/storage": "^2.5.0",
     "bcryptjs": "^2.4.3",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.5",
     "generate-password": "^1.4.2",
     "jsonwebtoken": "^8.5.1",
